@@ -1,11 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="smooth__scroll">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="/src/style/globals.css">
+    <link rel="stylesheet" href="/src/style/landing.css">
     <title>Santuario</title>
 </head>
 <body>
-    
+    <header id="landingHeader" class="landing__header" expanded="false">
+        <span id="navMenuBtn" class="material-symbols-outlined nav__menu__btn">
+            menu
+        </span>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home">Inicio</a></li>
+                <li class="nav__item"><a href="#">Portal Web</a></li>
+                <li class="nav__item"><a href="#services">Servicios</a></li>
+                <li class="nav__item"><a href="#about">Nosotros</a></li>
+                <li class="nav__item"><a href="#contact">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="landing__main">
+        <section data-header-color="light" class="dark__section" id="home">
+                <div class="section__container">
+                    <div class="home__container">
+                        <img src="/public/big-logo.png" alt="company logo">
+                        <div class="home__text">
+                            <h1>Bienvenido a Santuario</h1>
+                            <p>Si estás buscando un lugar en donde puedas confiar para el cuidado de una persona mayor. No busques más, ya lo
+                                encontraste.</p>
+                            <a class="home__cta" href="#">Acceder</a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section data-header-color="dark" class="light__section" id="services">
+            <div class="section__container">
+                <h2 class="section__title">Servicios</h2>
+                <div class="services__container">
+                    <div class="categories__container">
+                        <h3>Categorías</h3>
+                        <div class="categories__list">
+                            <button class="clean__category__filter__btn" disabled><span class="material-symbols-outlined">
+                                close
+                            </span></button>
+                            <ul class="list">
+                                <button selected="false" class="category__item" href="#"><li>Atención médica y de enfermería</li></button>
+                                <button selected="false" class="category__item" href="#"><li>Servicios de alimentación y nutrición</li></button>
+                                <button selected="false" class="category__item" href="#"><li>Atención espiritual y religiosa</li></button>
+                                <button selected="false" class="category__item" href="#"><li>Atención de fin de vida</li></button>
+                                <button selected="false" class="category__item" href="#">Atención personal</button>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="table__container">
+                        <table class="services__table">
+                            <thead class="table__head">
+                                <tr class="table__row">
+                                    <th>Todos los Servicios</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table__body">
+                                <tr class="table__row">
+                                    <td>Evaluación médica inicial y seguimiento regular</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td>Administración de medicamentos</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td>Tratamiento de enfermedades crónicas</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td>Servicios de fisioterapia y rehabilitación</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td>Servicios de fisioterapia y rehabilitación</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td>Servicios de fisioterapia y rehabilitación</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td>Servicios de fisioterapia y rehabilitación</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td>Servicios de fisioterapia y rehabilitación</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td>Servicios de fisioterapia y rehabilitación</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td>Servicios de fisioterapia y rehabilitación</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td>Servicios de fisioterapia y rehabilitación</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td>Servicios de fisioterapia y rehabilitación</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td>Servicios de fisioterapia y rehabilitación</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td>Servicios de fisioterapia y rehabilitación</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td>Servicios de fisioterapia y rehabilitación</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td>Servicios de fisioterapia y rehabilitación</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section data-header-color="light" class="dark__section" id="about">
+            <div class="section__container">
+                <h2 class="section__title">Nosotros</h2>
+                <div class="about__container">
+                    <div class="about__text">
+                        <p>Somos estudiantes de la Universidad Abierta Para Adulos (UAPA). Este proyecto es nuestro trabajo final de la asignatura
+                        de Desarrollo de Aplicaciones Web.</p>
+                    </div>
+                    <div class="about__images">
+                        <h4>Estos son los participantes</h4>
+                        <div class="about__images__container">
+                            <article>
+                                <img src="/public/about-avatars/avatar1.svg" alt="participant">
+                                <span>Warren Acosta</span>
+                            </article>
+                            <article>
+                                <img src="/public/about-avatars/avatar2.svg" alt="participant">
+                                <span>Alexis Pérez</span>
+                            </article>
+                            <article>
+                                <img src="/public/about-avatars/avatar3.svg" alt="participant">
+                                <span>Carlos De Los Santos</span>
+                            </article>
+                            <article>
+                                <img src="/public/about-avatars/avatar4.svg" alt="participant">
+                                <span>Gabriela Rosario</span>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section data-header-color="dark" class="light__section" id="contact">
+            <div class="section__container">
+                <h2 class="section__title">Contáctanos</h2>
+                <div class="contact__container">
+                    <form class="contact__form">
+                        <div class="form__group">
+                            <label for="email">Correo</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button class="contact__submit__btn" type="btn">Enviar</button>
+                    </form>
+                    <hr class="separator">
+                    <div class="contact__info">
+                        <div class="email">
+                            <input class="own__email" readonly>
+                            <a copied="false" class="copy__email__btn">
+                                copiar
+                            </a>
+                        </div>
+                        <div class="social__media">
+                            <a href="#" target="_blank" rel="noopener">
+                                <img src="./public/social-icons/facebook.svg" alt="facebook-icon">
+                                <span>Facebook</span>
+                            </a>
+                            <a href="#" target="_blank" rel="noopener">
+                                <img src="./public/social-icons/instagram.svg" alt="instagram-icon">
+                                <span>Instagram</span>
+                            </a>
+                            <a href="#" target="_blank" rel="noopener">
+                                <img src="./public/social-icons/twitter.svg" alt="twitter-icon">
+                                <span>Twitter</span>
+                            </a>
+                            <a href="#" target="_blank" rel="noopener">
+                                <img src="./public/social-icons/telegram.svg" alt="telegram-icon">
+                                <span>Telegram</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="dark__section landing__footer">
+        <div class="section__container">
+            <p class="footer__copyright">Proyecto UAPA - Desarrollo de Aplicaciones Web - 2024</p>
+        </div>
+    </footer>
+
+    <div hidden class="overlay"></div>
+
+    <script src="./src/use-cases/landing-expanded-menu.js"></script>
+    <script src="./src/use-cases/landing-navbar-color-change.js"></script>
+    <script src="./src/use-cases/landing-categories-btn-color.js"></script>
+    <script src="./src/use-cases/landing-copy-contact-email.js"></script>
 </body>
 </html>
