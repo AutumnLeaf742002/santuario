@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Kosugi&family=League+Spartan:wght@100..900&display=swap");
+
+:root {
+  --league-spartan: "League Spartan", sans-serif;
+  --kosugi: "Kosugi", sans-serif;
+}
+
+:root {
+  --light: #e9f1f5;
+  --dark: #202121;
+  --dark-blue: #012639;
+  --light-blue: #a1d1ea;
+  --blue-1: #075a85;
+  --dark-purple: #1b0c2e;
+  --light-purple: #ddd8e3;
+  --purple-1: #3e2959;
+}
+
+:root {
+  --max-lg-width: 1080px;
+  --max-md-width: 720px;
+  --max-sm-width: 540px;
+}
+
+:root {
+  --nav-width: 300px;
+}
+
+.nav__container {
+  background-color: var(--dark-blue);
+  color: var(--light);
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: var(--nav-width);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 4rem 0;
+  padding-left: 2rem;
+  gap: 6rem;
+  transition: all 0.3s ease;
+}
+
+.nav__container[data-collapsed="true"] {
+  width: 100px;
+  padding-left: 0;
+  align-items: center;
+}
+
+.nav__header {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.nav__container[data-collapsed="true"] .nav__header {
+  justify-content: center;
+}
+
+.nav__header img {
+  width: 70px;
+  height: 70px;
+}
+
+.nav__header h2 {
+  font-family: var(--league-spartan);
+  font-size: 2rem;
+}
+
+.nav__container[data-collapsed="true"] .nav__header h2 {
+  display: none;
+}
+
+.nav__menu {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.nav__menu ul{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 100%;
+}
+
+.nav__container[data-collapsed="true"] .nav__menu ul {
+  padding-left: 1rem;
+}
+
+.nav__menu--item {
+  background-color: var(--dark-blue);
+  border: none;
+  border-radius: 50px 0 0 50px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.nav__menu--item a{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.25rem;
+  width: 100%;
+}
+
+.nav__menu--item.active {
+  background-color: var(--light-purple);
+  color: var(--dark-blue);
+}
+
+.nav__menu--item:hover {
+  background-color: var(--light-purple);
+  color: var(--dark-blue);
+}
+
+.nav__menu--item a span:first-child{
+  font-size: 2rem;
+}
+
+.nav__container[data-collapsed="true"] .nav__menu--item a span:last-child {
+  display: none;
+}
+
+.nav__collapse__btn {
+  display: flex;
+  width: 100%;
+  color: var(--light);
+  background: none;
+  justify-content: flex-end;
+  padding-right: 1rem;
+  transition: all 0.3s ease;
+}
+
+.nav__container[data-collapsed="true"] .nav__collapse__btn span:first-child {
+  display: none;
+}
+
+.nav__collapse__btn span:last-child {
+  display: none;
+}
+
+.nav__container[data-collapsed="true"] .nav__collapse__btn span:last-child {
+  display: block;
+}
+
+.nav__collapse__btn:hover {
+  transform: translateY(-2px);
+}
+
+.nav__collapse__btn span {
+  font-size: 2rem;
+}
+
+.view__container {
+  background-color: var(--light-purple);
+  color: var(--dark);
+  height: 100vh;
+  margin-left: var(--nav-width);
+  transition: all 0.3s ease;
+}
+
+.nav__container[data-collapsed="true"] + .view__container {
+  margin-left: 100px;
+}
