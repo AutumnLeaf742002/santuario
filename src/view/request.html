@@ -8,6 +8,7 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="../style/globals.css">
     <link rel="stylesheet" href="../style/portal-layout.css">
+    <link rel="stylesheet" href="../style/request.css">
     <title>Solicitud</title>
 </head>
 
@@ -61,6 +62,252 @@
     
     <main class="view__container">
 
+        <div class="content__main__form__request">
+
+            <div class="main__form__request" id="mainFormRequest">
+
+                <div class="main__form__request__view">
+                    <div class="content__button__create__new__request">
+                        <button class="button__form__request" id="button__create__new__request">
+                            Nueva solicitud
+                        </button>
+                    </div>
+
+                    <div class="content__request">
+                        <h1>Mis solicitudes</h1>
+
+                        <table class="table__request">
+                            <thead>
+                                <tr>
+                                    <th>No. Solicitud</th>
+                                    <th>Estado</th>
+                                    <th>Paciente</th>
+                                    <th>Encargado</th>
+                                    <th>Forma de Pago</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+    
+                <div class="main__form__request__view">
+                    <div class="main__form__request__view__header">
+                        <h1>
+                            Solicitud de ingreso
+                        </h1>
+                        <h2>
+                            Informacion personal del paciente
+                        </h2>
+                    </div>
+
+                    <div class="content__request__form">
+
+                        <div>
+                            <div class="request__input">
+                                <label for="name">Nombre(s)</label>
+                                <input name="name" type="text">
+                            </div>
+    
+                            <div class="request__input">
+                                <label for="birthDate">Fecha de nacimiento</label>
+                                <input name="birthDate" type="text">
+                            </div>
+    
+                            <div class="request__input">
+                                <label for="maritalStatus">Estado civil</label>
+                                <input name="maritalStatus" type="text">
+                            </div>
+    
+                            <div class="request__input">
+                                <label for="identityDocument">Documento de identidad (opcional)</label>
+                                <input name="identityDocument" type="text">
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="request__input">
+                                <label for="lastName">Apellido(s)</label>
+                                <input name="lastName" type="text">
+                            </div>
+    
+                            <div class="request__input">
+                                <label for="gender">Género</label>
+                                <input name="gender" type="text">
+                            </div>
+    
+                            <div class="request__input">
+                                <label for="nationality">Nacionalidad</label>
+                                <input name="nationality" type="text">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+    
+                <div class="main__form__request__view">
+                    <div class="main__form__request__view__header">
+                        <h1>
+                            Solicitud de ingreso
+                        </h1>
+                        <h2>
+                            Informacion de contacto del encargado
+                        </h2>
+                    </div>
+
+                    <div class="content__request__form">
+
+                        <div>
+                            <div class="request__input">
+                                <label for="name_mandated">Nombre(s)</label>
+                                <input name="name_mandated" type="text">
+                            </div>
+    
+                            <div class="request__input">
+                                <label for="personalPhone_mandated">Teléfono personal</label>
+                                <input name="personalPhone_mandated" type="text">
+                            </div>
+    
+                            <div class="request__input">
+                                <label for="mail_mandated">Correo electronico</label>
+                                <input name="mail_mandated" type="text">
+                            </div>
+    
+                            <div class="request__input">
+                                <label for="jobPhone_mandated">Teléfono de trabajo</label>
+                                <input name="jobPhone_mandated" type="text">
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="request__input">
+                                <label for="lastName_mandated">Apellido(s)</label>
+                                <input name="lastName_mandated" type="text">
+                            </div>
+
+                            <div class="request__input">
+                                <label for="address_mandated">Dirección</label>
+                                <input name="address_mandated" type="text">
+                            </div>
+
+                            <div class="request__input">
+                                <label for="jobName_mandated">Lugar de trabajo</label>
+                                <input name="jobName_mandated" type="text">
+                            </div>
+
+                            <div class="request__input">
+                                <label for="identityDocument_mandated">Documento de identidad</label>
+                                <input name="identityDocument_mandated" type="text">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="main__form__request__view" id="payment">
+                    <div class="main__form__request__view__header">
+                        <h1>
+                            Solicitud de ingreso
+                        </h1>
+                    </div>
+
+                    <div class="payment">
+                        <div class="content__payment">
+                            <h2>Forma de pago</h2>
+
+                            <div>
+                                <p>Tarjeta de credito</p>
+                                
+                                <div>
+                                    <img class="img__payment" src="../../public/1.png" alt="Metodo de pago santuario">
+    
+                                    <img class="img__payment" src="../../public/4.png" alt="Metodo de pago santuario">
+                                </div>
+                            </div>
+    
+                            <div>
+                                <p>Paypal</p>
+                                
+                                <div>
+                                    <img class="img__payment" src="../../public/2.png" alt="Metodo de pago santuario">
+                                </div>
+                            </div>
+    
+                            <div>
+                                <p>Transferencia</p>
+                                
+                                <div>
+                                    <img class="img__payment" src="../../public/3.png" alt="Metodo de pago santuario">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content__form__payment">
+                            <table>
+                                <tr>
+                                    <td>
+                                        No. Tarjeta
+                                    </td>
+                                    <td>
+                                        <input style="width: 300px;" type="text" class="payment__input">
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        Nombre Tarjeta
+                                    </td>
+                                    <td>
+                                        <input style="width: 300px;" type="text" class="payment__input">
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        Fecha Vencimiento
+                                    </td>
+                                    <td>
+                                        <input style="width: 100px;" type="text" class="payment__input">
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        CVV
+                                    </td>
+                                    <td>
+                                        <input style="width: 100px;" type="text" class="payment__input">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+            
+            <div class="buttons__form__request" id="buttonsFormRequest">
+                <button id="buttonBack" class="button__form__request">
+                    Atrás
+                </button>
+
+                <button id="buttonNext" class="button__form__request">
+                    Siguiente
+                </button>
+            </div>
+
+        </div>
+
     </main>
 
 
@@ -68,6 +315,7 @@
 
 
     <script src="../use-cases/portal-nav.js"></script>
+    <script src="../use-cases/change-view-request.js"></script>
 </body>
 
 </html>
