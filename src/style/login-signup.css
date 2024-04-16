@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Kosugi&family=League+Spartan:wght@100..900&display=swap");
+
+:root {
+  --league-spartan: "League Spartan", sans-serif;
+  --kosugi: "Kosugi", sans-serif;
+}
+
+:root {
+  --light: #e9f1f5;
+  --dark: #202121;
+  --dark-blue: #012639;
+  --light-blue: #a1d1ea;
+  --blue-1: #075a85;
+  --dark-purple: #1b0c2e;
+  --light-purple: #ddd8e3;
+  --purple-1: #3e2959;
+}
+
+:root {
+  --max-lg-width: 1080px;
+  --max-md-width: 720px;
+  --max-sm-width: 540px;
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+}
+
+.dark__section {
+  background-color: var(--dark-blue);
+  color: var(--light);
+}
+
+.light__section {
+  background-color: var(--light-purple);
+  color: var(--dark);
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.header__container img {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+}
+
+.header__container h1 {
+    font-family: var(--league-spartan);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+    width: 100%;
+    gap: 3rem;
+    flex: 1;
+}
+
+.main__container h2 {
+    font-family: var(--league-spartan);
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.main__container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+}
+
+.input__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+}
+
+.input__container label {
+    font-size: .85rem;
+    margin-bottom: 0.5rem;
+}
+
+.input__container input {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 10px;
+    font-family: var(--kosugi);
+    font-size: 1rem;
+}
+
+.form__signup__message {
+    font-size: .75rem;
+    font-family: var(--kosugi);
+    width: 100%;
+    text-align: right;
+}
+
+.form__signup__message a {
+    color: var(--light-blue);
+    text-decoration: none;
+}
+
+.section__container {
+  max-width: var(--max-sm-width);
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.form__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 15px;
+    font-family: var(--league-spartan);
+    font-weight: 700;
+    font-size: 1rem;
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form__btn:hover {
+    background-color: var(--blue-1);
+    color: var(--light);
+    transform: translateY(-2px);
+}
+
+/* Footer */
+
+.landing__footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 25vh;
+  padding: 4rem 2rem;
+  width: 100%;
+}
+
+.footer__copyright {
+    width: 100%;
+}
