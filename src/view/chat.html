@@ -8,7 +8,8 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="../style/globals.css">
     <link rel="stylesheet" href="../style/portal-layout.css">
-    <title>Solicitud</title>
+    <link rel="stylesheet" href="../style/chat.css">
+    <title>Chat</title>
 </head>
 
 <body>
@@ -60,14 +61,24 @@
     </nav>
     
     <main class="view__container">
+        <section id="chat">
 
+            <div class="message__container">
+                <!-- here goes the messages -->
+            </div>
+    
+            <form class="chat__bar">
+                <input type="text" autocomplete="off" class="chat__input" name="chat-input" id="chat-input" placeholder="Escribe un mensaje">
+                <button class="send__button">
+                    <img src="../images/direct-right.png" alt="">
+                </button>
+            </form>
+    
+        </section>
     </main>
 
-
-
-
-
     <script src="../use-cases/portal-nav.js"></script>
+    <script src="../use-cases/chat.js"></script>
 </body>
 
 </html>
