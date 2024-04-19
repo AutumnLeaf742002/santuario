@@ -1,0 +1,161 @@
+.content__main__form__request{
+    width: 100%;
+    height: 100%;
+    border: 50px solid transparent;
+    overflow-x: hidden;
+}
+
+.main__form__request{
+    width: 400%;
+    overflow-x: auto;
+    height: 85%;
+    display: flex;
+}
+
+.main__form__request__view{
+    width: 25%;
+    min-height: 10%;
+}
+
+.content__button__create__new__request{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.buttons__form__request{
+    width: 100%;
+    height: 15%;
+    display: none;
+    justify-content: end;
+    gap: 20px;
+    align-items: center;
+}
+
+#button__create__new__request{
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+.content__request h1{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.table__request{
+    margin-top: 20px;
+    width: 90%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+tr{
+    border-bottom: 2px solid black;
+    height: 50px;
+}
+
+.main__form__request__view__header{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0px 60px;
+}
+.main__form__request__view__header h1{
+    font-weight: bold;
+    text-align: center;
+}
+.main__form__request__view__header h2{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.content__request__form{
+    display: flex;
+    justify-content: space-between;
+}
+.content__request__form > div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 60px;
+    width: 50%;
+}
+.request__input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.request__input input{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 0px 0px 0px 10px;
+}
+
+.payment{
+    display: flex;
+    width: 100%;
+    gap: 300px;
+    justify-content: center;
+}
+
+.content__payment{
+    margin-top: 100px;
+}
+.content__payment h2{
+    font-weight: bold;
+}
+.content__payment > div{
+    background-color: var(--light);
+    margin: 30px 0px;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 130%;
+    border-radius: 10px;
+    gap: 10px;
+}
+.content__payment > div > div{
+    display: flex;
+    gap: 10px;
+}
+.img__payment{
+    width: 70px;
+    height: auto;
+    object-fit: contain;
+}
+
+.content__form__payment{
+    margin-top: 100px;
+}
+.content__form__payment > table{
+    width: 100%;
+    display: flex;
+    gap: 100px;
+}
+
+.content__form__payment > table tr{
+    height: 90px;
+}
+.content__form__payment > table tr td{
+    padding: 0px 10px;
+}
+.content__form__payment > table tr td{
+    font-size: 20px;
+}
+
+.payment__input{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 0px 0px 0px 10px;
+}
+
+#payment{
+    overflow-y: hidden;
+}
