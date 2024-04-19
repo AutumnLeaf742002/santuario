@@ -170,7 +170,6 @@
   margin-left: 100px;
 }
 
-<<<<<<< HEAD
 .logout__btn {
   background-color: var(--light-blue);
   color: var(--light);
@@ -191,7 +190,8 @@
   margin-left: 0;
   padding: .5rem;
   width: 80%;
-=======
+}
+
 .button__form__request{
   min-width: 130px;
   height: 50px;
@@ -204,8 +204,8 @@
   background-color: var(--purple-1);
   color: var(--light-purple);
 }
+
 #buttonBack{
   background-color: var(--light-blue);
   color: var(--purple-1);
->>>>>>> c494c6055095a6af3468cbab848cb8e452ee886c
 }
