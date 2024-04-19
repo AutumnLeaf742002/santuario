@@ -169,3 +169,25 @@
 .nav__container[data-collapsed="true"] + .view__container {
   margin-left: 100px;
 }
+
+.logout__btn {
+  background-color: var(--light-blue);
+  color: var(--light);
+  border: none;
+  border-radius: 50px;
+  padding: 1rem;
+  width: 100%;
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+  margin-left: -1rem;
+}
+
+.logout__btn:hover {
+  background-color: var(--blue-1);
+}
+
+.nav__container[data-collapsed="true"] .logout__btn {
+  margin-left: 0;
+  padding: .5rem;
+  width: 80%;
+}
