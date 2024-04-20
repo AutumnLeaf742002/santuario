@@ -115,41 +115,41 @@
                     <div class="content__request__form">
 
                         <div>
-                            <div class="request__input">
+                            <div class="request__input" >
                                 <label for="name">Nombre(s)</label>
-                                <input name="name" type="text">
+                                <input name="name" type="text" id="name">
                             </div>
     
-                            <div class="request__input">
+                            <div class="request__input" >
                                 <label for="birthDate">Fecha de nacimiento</label>
-                                <input name="birthDate" type="text">
+                                <input name="birthDate" type="date" id="birthDate">
                             </div>
     
-                            <div class="request__input">
+                            <div class="request__input" >
                                 <label for="maritalStatus">Estado civil</label>
-                                <input name="maritalStatus" type="text">
+                                <input name="maritalStatus" type="text" id="maritalStatus">
                             </div>
     
-                            <div class="request__input">
-                                <label for="identityDocument">Documento de identidad (opcional)</label>
-                                <input name="identityDocument" type="text">
+                            <div class="request__input" >
+                                <label for="identityDocument">Documento de identidad </label>
+                                <input name="identityDocument" type="text" id="identityDocument">
                             </div>
                         </div>
 
                         <div>
-                            <div class="request__input">
+                            <div class="request__input" >
                                 <label for="lastName">Apellido(s)</label>
-                                <input name="lastName" type="text">
+                                <input name="lastName" type="text" id="lastName">
                             </div>
     
                             <div class="request__input">
                                 <label for="gender">Género</label>
-                                <input name="gender" type="text">
+                                <input name="gender" type="text" id="gender">
                             </div>
     
-                            <div class="request__input">
+                            <div class="request__input" >
                                 <label for="nationality">Nacionalidad</label>
-                                <input name="nationality" type="text">
+                                <input name="nationality" type="text" id="nationality">
                             </div>
                         </div>
 
@@ -169,46 +169,46 @@
                     <div class="content__request__form">
 
                         <div>
-                            <div class="request__input">
+                            <div class="request__input" >
                                 <label for="name_mandated">Nombre(s)</label>
-                                <input name="name_mandated" type="text">
+                                <input name="name_mandated" type="text" id="name_mandated">
                             </div>
     
-                            <div class="request__input">
-                                <label for="personalPhone_mandated">Teléfono personal</label>
-                                <input name="personalPhone_mandated" type="text">
+                            <div class="request__input" >
+                                <label for="personalPhone_mandated" >Teléfono personal</label>
+                                <input name="personalPhone_mandated" type="text" id="personalPhone_mandated">
                             </div>
     
-                            <div class="request__input">
+                            <div class="request__input" >
                                 <label for="mail_mandated">Correo electronico</label>
-                                <input name="mail_mandated" type="text">
+                                <input name="mail_mandated" type="text" id="mail_mandated">
                             </div>
     
-                            <div class="request__input">
+                            <div class="request__input" >
                                 <label for="jobPhone_mandated">Teléfono de trabajo</label>
-                                <input name="jobPhone_mandated" type="text">
+                                <input name="jobPhone_mandated" type="text" id="jobPhone_mandated">
                             </div>
                         </div>
 
                         <div>
-                            <div class="request__input">
+                            <div class="request__input" >
                                 <label for="lastName_mandated">Apellido(s)</label>
-                                <input name="lastName_mandated" type="text">
+                                <input name="lastName_mandated" type="text" id="lastName_mandated">
                             </div>
 
-                            <div class="request__input">
+                            <div class="request__input" >
                                 <label for="address_mandated">Dirección</label>
-                                <input name="address_mandated" type="text">
+                                <input name="address_mandated" type="text" id="address_mandated">
                             </div>
 
-                            <div class="request__input">
+                            <div class="request__input" >
                                 <label for="jobName_mandated">Lugar de trabajo</label>
-                                <input name="jobName_mandated" type="text">
+                                <input name="jobName_mandated" type="text" id="jobName_mandated">
                             </div>
 
-                            <div class="request__input">
+                            <div class="request__input" >
                                 <label for="identityDocument_mandated">Documento de identidad</label>
-                                <input name="identityDocument_mandated" type="text">
+                                <input name="identityDocument_mandated" type="text" id="identityDocument_mandated">
                             </div>
                         </div>
 
@@ -260,7 +260,7 @@
                                         No. Tarjeta
                                     </td>
                                     <td>
-                                        <input style="width: 300px;" type="text" class="payment__input">
+                                        <input style="width: 300px;" type="text" class="payment__input" id="payment__input__card">
                                     </td>
                                 </tr>
 
@@ -269,16 +269,16 @@
                                         Nombre Tarjeta
                                     </td>
                                     <td>
-                                        <input style="width: 300px;" type="text" class="payment__input">
+                                        <input style="width: 300px;" type="text" class="payment__input" id="payment__input__name">
                                     </td>
                                 </tr>
 
                                 <tr>
                                     <td>
-                                        Fecha Vencimiento
+                                        Fecha de vencimiento
                                     </td>
                                     <td>
-                                        <input style="width: 100px;" type="text" class="payment__input">
+                                        <input style="width: 100px;" type="date" class="payment__input" id="payment__input__date">
                                     </td>
                                 </tr>
 
@@ -287,7 +287,7 @@
                                         CVV
                                     </td>
                                     <td>
-                                        <input style="width: 100px;" type="text" class="payment__input">
+                                        <input style="width: 100px;" type="text" class="payment__input" id="payment__cvv">
                                     </td>
                                 </tr>
                             </table>
@@ -314,7 +314,7 @@
 
     <script src="../use-cases/user-is-login.js"></script>
     <script src="../use-cases/portal-nav.js"></script>
-    <script src="../use-cases/change-view-request.js"></script>
+    <script src="./request.js"></script>
 </body>
 
 </html>
