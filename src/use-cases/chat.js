@@ -41,7 +41,7 @@ $chatBarForm.addEventListener('submit', (e) => {
             }, 1000)
         } else if (currentChatOption === 2) {
             setTimeout(() => {
-                createMessage('Para registrase necesita su idenficanción, identificación de un encagadox del encargado, ¿Aún necesita ayuda? \n\n (1) Sí ✅ \n (2) No ⛔')
+                createMessage('Para registrase necesita su idenficanción y identificación de un encagado, ¿Aún necesita ayuda? \n\n (1) Sí ✅ \n (2) No ⛔')
                 interactionNumber++;
             }, 1000)
         }
