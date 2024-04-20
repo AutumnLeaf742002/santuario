@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,7 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="../style/globals.css">
     <link rel="stylesheet" href="../style/portal-layout.css">
+    <link rel="stylesheet" href="../style/others-services.css">
     <title>Otros Servicios</title>
 </head>
 
@@ -62,11 +63,80 @@
     </nav>
     
     <main class="view__container">
+        <form class="content__main__others__services" id="formOthersServices">
 
+            <div class="content__form__others__services" id="content__form__others__services">
+                <div class="view">
+                    <div class="services">
+
+                        <div class="content__category">
+                            <h1>Title category</h1>
+                            <div class="categories">
+                                <div class="category">Servicio</div>
+                                <div class="category">Servicio</div>
+                                <div class="category">Servicio</div>
+                            </div>
+                        </div>
+
+                        <div class="content__category">
+                            <h1>Title category</h1>
+                            <div class="categories">
+                                <div class="category">Servicio</div>
+                                <div class="category">Servicio</div>
+                                <div class="category">Servicio</div>
+                            </div>
+                        </div>
+
+                        <div class="content__category">
+                            <h1>Title category</h1>
+                            <div class="categories">
+                                <div class="category">Servicio</div>
+                                <div class="category">Servicio</div>
+                                <div class="category">Servicio</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="view">
+                    <h1>
+                        Solicitud de otros servicios
+                    </h1>
+                    <div class="content__form">
+                        <div>
+                            <h2>Numero de Solicitud</h2>
+                            <p>
+                                Este ese el número de la solicitud a la que le será agregado el servicio adicional
+                            </p>
+                            <input type="number">
+                        </div>
+                        <div class="webkit">
+                            <h2>Servicio a solicitar</h2>
+                            <ul class="ul">
+                                <li>Servicio para comer perros a descuento</li>
+                                <li>Servicio para comer perros a descuento</li>
+                                <li>Servicio para comer perros a descuento</li>
+                                <li>Servicio para comer perros a descuento</li>
+                                <li>Servicio para comer perros a descuento</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content__buttons__others__services">
+                <button class="button__form__request" id="buttonBack" style="background-color: #AA2E2E; color: white;">
+                    Cancelar
+                </button>
+                <input type="submit" class="button__form__request" id="buttonNext" value="Agregar">
+            </div>
+        </form>
     </main>
 
     <script src="../use-cases/user-is-login.js"></script>
     <script src="../use-cases/portal-nav.js"></script>
+    <script src="./other-services.js"></script>
 </body>
 
 </html>
