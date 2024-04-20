@@ -86,3 +86,14 @@ button__create__new__request.addEventListener('click', () => {
     }
 })
 
+
+const namesLocalStorage = JSON.parse(localStorage.getItem('names'))
+const $fragmentList = document.createDocumentFragment()
+namesLocalStorage.forEach(el=>{
+    const $tr = document.createElement('tr')
+    $tr.innerHTML = `<td>${el.id}</td><td>Pendiente</td><td>${el.name}</td><td>${el.nameMandated}</td><td>Tarjeta</td>`
+    $fragmentList.append($tr)
+})
+
+const $tableRequest = document.getElementById('list__body')
+$tableRequest.append($fragmentList)
